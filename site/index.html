@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>체이서 테일즈 3D — 0.2초 가드의 턴제 액션 로그라이크 RPG</title>
+  <meta name="description" content="적의 공격을 0.2초 타이밍으로 막고, 쓸수록 진화하는 필살기로 심연을 돌파하세요. 웨이브마다 아티팩트를 골라 빌드를 완성하는 3D 카툰 턴제 액션 로그라이크 RPG, 체이서 테일즈 3D.">
+  <meta name="theme-color" content="#0E1430">
+  <link rel="canonical" href="https://jyha6202h.github.io/chaser-tales/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="체이서 테일즈 3D">
+  <meta property="og:title" content="체이서 테일즈 3D — 0.2초를 막고, 심연을 벤다">
+  <meta property="og:description" content="막고, 모으고, 터뜨리는 턴제 액션 로그라이크 RPG. 쓸수록 진화하는 기술로 심연의 군주에 맞서세요.">
+  <meta property="og:url" content="https://jyha6202h.github.io/chaser-tales/">
+  <meta property="og:image" content="https://jyha6202h.github.io/chaser-tales/assets/img/og-image.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="쓸수록 강해진다! 기술 숙련도 진화 시스템 — 엘레스의 SKILL LEVEL UP 화면">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className = 'js';</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- 0. 상단 내비게이션 -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#top">
+        <img src="assets/img/logo-icon.webp" width="32" height="32" alt="">
+        <span>체이서 테일즈 3D</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#battle">전투</a></li>
+          <li><a href="#growth">성장</a></li>
+          <li><a href="#mobile">모바일</a></li>
+          <li><a href="#story">이야기</a></li>
+          <li><a href="#gallery">스크린샷</a></li>
+          <li><a href="#info">정보</a></li>
+        </ul>
+      </nav>
+      <!-- 스토어 URL이 정해지면 js/main.js의 STORE_LINKS에 넣는다. 비어 있으면 아래 대체 버튼이 그대로 보인다. -->
+      <a class="btn btn-primary btn-sm nav-cta" href="#info" data-store-cta="nav">게임 정보</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. 히어로 -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero-rune" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-art">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <img src="assets/img/keyart.webp" width="600" height="600" alt="불꽃이 이는 검을 든 붉은 머리의 기사 엘레스" fetchpriority="high">
+        </div>
+        <div class="hero-text">
+          <p class="badge">턴제 액션 로그라이크 RPG</p>
+          <h1 id="hero-title" class="hero-title">체이서 테일즈 3D</h1>
+          <p class="hero-headline">0.2초를 막고, 심연을 벤다</p>
+          <p class="hero-sub">적의 공격을 정확한 순간에 막아 힘을 모으고, 쓸 때마다 진화하는 필살기로 되갚아 주세요. 붉은 기사 엘레스의 여정이 당신의 손끝에서 시작됩니다.</p>
+          <ul class="chips">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg>
+              0.2초 퍼펙트 가드
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+              3단 필살기
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg>
+              Android · 토스 앱
+            </li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#battle" data-store-cta="hero">전투 살펴보기</a>
+            <a class="btn btn-outline" href="#gallery">스크린샷 보기</a>
+          </div>
+          <p class="store-note" data-store-fallback>다운로드 링크는 준비되는 대로 이 페이지에 안내합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 전투 한눈에 -->
+    <section id="battle" class="section" aria-labelledby="battle-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="badge">전투 방식</p>
+          <h2 id="battle-title">내 턴엔 고르고, 적 턴엔 막는다</h2>
+          <p class="lead">체이서 테일즈 3D는 차례를 주고받는 턴제 전투입니다. 다만 적의 차례에도 손을 놓을 수 없습니다. 공격이 닿는 순간을 읽고 막아내야 다음 턴의 한 방이 커집니다.</p>
+        </header>
+
+        <figure class="shot shot-main reveal">
+          <img src="assets/img/combat-turn-shot-1200.webp"
+               srcset="assets/img/combat-turn-shot-720.webp 720w, assets/img/combat-turn-shot-1200.webp 1200w"
+               sizes="(min-width: 1200px) 1080px, 92vw"
+               width="1200" height="496" loading="lazy"
+               alt="루미나 숲에서 엘레스가 빨강·보라 슬라임과 마주한 턴제 전투 화면. 하단에 기본 공격, 타이밍 가드, 3단 필살기, 버서크, 포션 버튼이 있다">
+        </figure>
+
+        <ol class="steps">
+          <li class="step step-guard reveal">
+            <h3>막는다 · 퍼펙트 가드</h3>
+            <p>적의 공격에 맞춰 0.2초 안에 방어하면 받는 피해가 절반으로 줄어듭니다. 성공하는 순간 MP와 분노 게이지가 함께 차오릅니다.</p>
+          </li>
+          <li class="step step-charge reveal">
+            <h3>모은다 · MP와 분노</h3>
+            <p>기본 공격과 가드로 쌓은 MP와 분노(Rage)는 다음 수를 위한 자원입니다. 지금 쓸지, 더 모을지는 당신이 정합니다.</p>
+          </li>
+          <li class="step step-burst reveal">
+            <h3>터뜨린다 · 3단 필살기와 버서크</h3>
+            <p>문 슬래시, 소드 웨이브, 라이징 크로스로 이어지는 3단 필살기에 MP를 쏟고, 분노가 차오르면 광폭화 '버서크'로 전세를 뒤집으세요.</p>
+          </li>
+        </ol>
+
+        <div class="shot-pair">
+          <figure class="shot reveal">
+            <img src="assets/img/perfect-guard-shot-720.webp"
+                 srcset="assets/img/perfect-guard-shot-720.webp 720w, assets/img/perfect-guard-shot-1200.webp 1200w"
+                 sizes="(min-width: 768px) 46vw, 92vw"
+                 width="720" height="298" loading="lazy"
+                 alt="엘레스가 슬라임의 공격을 타이밍 가드로 막아내는 장면">
+            <figcaption>적이 달려드는 순간이 곧 반격의 신호입니다.</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="assets/img/skill-action-shot-720.webp"
+                 srcset="assets/img/skill-action-shot-720.webp 720w, assets/img/skill-action-shot-1200.webp 1200w"
+                 sizes="(min-width: 768px) 46vw, 92vw"
+                 width="720" height="298" loading="lazy"
+                 alt="엘레스의 범위 필살기가 두 슬라임을 동시에 타격하며 화염 상태를 거는 장면">
+            <figcaption>숙련된 필살기는 여러 적을 한 번에 휩쓸고 불꽃을 남깁니다.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 핵심 기능: 성장 -->
+    <section id="growth" class="section section-alt" aria-labelledby="growth-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="badge">성장</p>
+          <h2 id="growth-title">쓸수록, 쓰러질수록 강해진다</h2>
+          <p class="lead">한 번의 도전이 끝나도 남는 것이 있습니다. 손에 익은 기술, 이번 판의 선택, 그리고 다음 도전을 위한 영구 강화까지.</p>
+        </header>
+
+        <div class="features">
+          <article class="feature reveal">
+            <figure class="shot">
+              <img src="assets/img/skill-mastery-shot-720.webp"
+                   srcset="assets/img/skill-mastery-shot-720.webp 720w, assets/img/skill-mastery-shot-1200.webp 1200w"
+                   sizes="(min-width: 1200px) 620px, (min-width: 768px) 54vw, 92vw"
+                   width="720" height="298" loading="lazy"
+                   alt="전투 중 'SKILL LEVEL UP' 배너와 함께 엘레스의 컷인이 나타나고 '숙련기 소드 웨이브' 달성을 알리는 화면">
+              <figcaption>숙련도를 채운 순간, 기술의 이름 앞에 '숙련기'가 붙습니다.</figcaption>
+            </figure>
+            <div class="feature-text">
+              <p class="feature-num" aria-hidden="true">01</p>
+              <h3>쓸수록 진화하는 기술</h3>
+              <p>같은 기술을 반복해 쓰면 숙련도가 오르고, 이펙트와 위력이 단계별로 달라집니다. 최고 단계 [마스터]에 닿으면 궁극의 공격 모션과 화면을 채우는 컷인 연출이 열립니다.</p>
+            </div>
+          </article>
+
+          <article class="feature reveal">
+            <figure class="shot">
+              <img src="assets/img/artifact-select-shot-720.webp"
+                   srcset="assets/img/artifact-select-shot-720.webp 720w, assets/img/artifact-select-shot-1200.webp 1200w"
+                   sizes="(min-width: 1200px) 620px, (min-width: 768px) 54vw, 92vw"
+                   width="720" height="298" loading="lazy"
+                   alt="웨이브 클리어 후 치명 아티팩트, 공격 아티팩트, 휴식 중 하나를 고르는 보상 선택 화면">
+              <figcaption>공격을 올릴까, 숨을 고를까. 다음 웨이브 전 단 한 번의 선택입니다.</figcaption>
+            </figure>
+            <div class="feature-text">
+              <p class="feature-num" aria-hidden="true">02</p>
+              <h3>웨이브마다 고르는 아티팩트</h3>
+              <p>웨이브를 넘길 때마다 보상 세 가지 중 하나를 고릅니다. 공격, 방어, 치명타, 회복 가운데 무엇을 쌓느냐에 따라 같은 엘레스도 전혀 다르게 싸웁니다. 확률로 나타나는 색 변종 몬스터도 눈여겨보세요.</p>
+            </div>
+          </article>
+
+          <article class="feature reveal">
+            <figure class="shot">
+              <img src="assets/img/meta-upgrade-shot-720.webp"
+                   srcset="assets/img/meta-upgrade-shot-720.webp 720w, assets/img/meta-upgrade-shot-1200.webp 1200w"
+                   sizes="(min-width: 1200px) 620px, (min-width: 768px) 54vw, 92vw"
+                   width="720" height="298" loading="lazy"
+                   alt="보석으로 체력 단련, 검술 단련, 방어 단련을 올리고 영혼석으로 돌파하는 영구 강화 화면">
+              <figcaption>강화는 다음 도전부터 바로 적용됩니다.</figcaption>
+            </figure>
+            <div class="feature-text">
+              <p class="feature-num" aria-hidden="true">03</p>
+              <h3>쓰러져도 남는 영구 강화</h3>
+              <p>패배는 끝이 아니라 다음 도전의 준비입니다. 모은 보석으로 체력·검술·방어를 단련하고, 영혼석으로 한계를 돌파하면 다음 도전부터 더 단단한 엘레스로 출발합니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 모바일 플레이 블록 -->
+    <section id="mobile" class="section-band" aria-labelledby="mobile-title">
+      <div class="container band-grid">
+        <div class="band-text reveal">
+          <p class="badge">모바일</p>
+          <h2 id="mobile-title">손안에서 펼치는 전투</h2>
+          <p class="lead">스마트폰 화면에 맞춰 만든 턴제 액션입니다. 버튼 하나하나가 손가락 크기에 맞춰져 있어, 가드 타이밍에만 집중할 수 있습니다.</p>
+        </div>
+        <ul class="band-cards">
+          <li class="band-card reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M19 26V10a3 3 0 0 1 6 0v12"/>
+              <path d="M25 21v-2a3 3 0 0 1 6 0v3"/>
+              <path d="M31 22a3 3 0 0 1 6 0v8c0 7-5 12-11 12h-2c-4 0-7-2-9-5l-5-8a3 3 0 0 1 5-3l4 4"/>
+              <circle cx="22" cy="10" r="7" opacity=".45"/>
+            </svg>
+            <h3>큼직한 터치 버튼</h3>
+            <p>기본 공격, 가드, 3단 필살기, 버서크, 포션이 화면 아래 한 줄에 모여 있습니다. 엄지로 바로 누를 수 있는 크기입니다.</p>
+          </li>
+          <li class="band-card reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 4 42 14v20L24 44 6 34V14L24 4Z"/>
+              <path d="M6 14l18 10 18-10M24 24v20"/>
+            </svg>
+            <h3>3D 카툰 렌더링</h3>
+            <p>밝은 숲과 붉은 협곡, 보랏빛 성채를 부드러운 3D 카툰 그래픽으로 담았습니다.</p>
+          </li>
+        </ul>
+        <p class="band-spec">Android 8.0 이상 · 토스 앱(앱인토스) · 인터넷 연결 필요</p>
+      </div>
+    </section>
+
+    <!-- 5. 세계관·보스 (간결형) -->
+    <section id="story" class="section" aria-labelledby="story-title">
+      <div class="container">
+        <div class="story-top reveal">
+          <div class="hero-card">
+            <img src="assets/img/keyart-240.webp" width="240" height="240" loading="lazy" alt="붉은 기사 엘레스의 초상">
+            <p class="hero-card-name">엘레스</p>
+            <p class="hero-card-desc">붉은 기사 · 체이서 기사단의 마지막 검사. 불꽃이 이는 대검으로 심연에 맞섭니다.</p>
+          </div>
+          <div class="story-text">
+            <p class="badge">이야기</p>
+            <h2 id="story-title">카자르가 깨어난 날</h2>
+            <p class="lead">평화롭던 루미나 숲 너머에서 고대 심연의 군주 카자르가 긴 잠에서 깨어났습니다. 체이서 기사단에 남은 마지막 검사 엘레스는 맹세를 지키기 위해 홀로 심연으로 향합니다. 쓰러지고 다시 일어설 때마다 더 붉게 타오르는 불꽃. 그 끝에서 그녀가 마주할 진실은 무엇일까요?</p>
+          </div>
+        </div>
+
+        <div class="journey reveal">
+          <h3 class="journey-title">엘레스의 여정</h3>
+          <ol class="timeline">
+            <li><strong>루미나 숲</strong><span>빛의 정령이 살던 숲. 지금은 물든 슬라임들이 숲을 메우고 있습니다.</span></li>
+            <li><strong>아비스 협곡</strong><span>붉게 마른 협곡. 거대한 수호룡이 길을 막아섭니다.</span></li>
+            <li><strong>심연의 성채</strong><span>모든 것의 끝, 심연의 군주가 기다리는 곳.</span></li>
+          </ol>
+        </div>
+
+        <div class="bosses">
+          <article class="boss reveal">
+            <img src="assets/img/dragon-boss-shot-720.webp"
+                 srcset="assets/img/dragon-boss-shot-720.webp 720w, assets/img/dragon-boss-shot-1200.webp 1200w"
+                 sizes="(min-width: 768px) 46vw, 92vw"
+                 width="720" height="298" loading="lazy"
+                 alt="붉은 협곡에서 엘레스가 주황빛 거대 수호룡 가르고스와 맞서는 보스전 화면">
+            <div class="boss-body">
+              <h3>가르고스</h3>
+              <p class="boss-sub">아비스 협곡의 거대 수호룡</p>
+              <p>단단한 방어막을 깨뜨린 순간이 공격의 기회입니다.</p>
+            </div>
+          </article>
+          <article class="boss reveal">
+            <img src="assets/img/final-boss-shot-720.webp"
+                 srcset="assets/img/final-boss-shot-720.webp 720w, assets/img/final-boss-shot-1200.webp 1200w"
+                 sizes="(min-width: 768px) 46vw, 92vw"
+                 width="720" height="298" loading="lazy"
+                 alt="보랏빛 성채 안에서 엘레스가 붉은 날개의 심연의 군주 카자르와 대치한 최종 보스전 화면">
+            <div class="boss-body">
+              <h3>카자르</h3>
+              <p class="boss-sub">심연의 군주</p>
+              <p>대륙에 혼돈을 몰고 온 최후의 적. 엘레스의 모든 것을 걸어야 합니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 스크린샷 갤러리 -->
+    <section id="gallery" class="section section-deep" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="badge">스크린샷</p>
+          <h2 id="gallery-title">전투의 순간들</h2>
+          <p class="lead">이미지를 누르면 크게 볼 수 있습니다.</p>
+        </header>
+        <ul class="gallery-grid">
+          <li><a class="gallery-item" href="assets/img/promo-08-1504.webp"><img src="assets/img/promo-08-720.webp" width="720" height="355" loading="lazy" alt="전략과 액션이 만난 정통 턴제 전투! 단순한 자동전투는 그만, 한 수 한 수가 승패를 가르는 턴제 배틀"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-02-1504.webp"><img src="assets/img/promo-02-720.webp" width="720" height="355" loading="lazy" alt="0.2초의 전율! 타이밍 퍼펙트 가드. 적의 공격을 정확히 막아 피해 50% 감소 &amp; 반격 분노(Rage) 충전!"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-01-1504.webp"><img src="assets/img/promo-01-720.webp" width="720" height="355" loading="lazy" alt="화려하게 폭발하는 궁극의 스킬! 숙련도에 따라 진화하는 압도적인 범위 공격과 화염 검기"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-07-1504.webp"><img src="assets/img/promo-07-720.webp" width="720" height="355" loading="lazy" alt="쓸수록 강해진다! 기술 숙련도 진화 시스템. 입문기에서 마스터까지! 완전히 새로워지는 컷인 연출과 타격 모션"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-05-1504.webp"><img src="assets/img/promo-05-720.webp" width="720" height="355" loading="lazy" alt="매번 새로운 빌드! 3가지 아티팩트 선택. 공격 · 방어 · 치명타를 조합해 나만의 최적 빌드를 완성하라"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-06-1504.webp"><img src="assets/img/promo-06-720.webp" width="720" height="355" loading="lazy" alt="쓰러져도 다시 일어선다! 영혼석 영구 강화. 수집한 영혼석으로 기본 스탯을 강화하고 한계를 돌파하라"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-04-1504.webp"><img src="assets/img/promo-04-720.webp" width="720" height="355" loading="lazy" alt="협곡을 뒤흔드는 거대 수호룡 가르고스! 방어막을 깨뜨려 BREAK! 빈틈을 노려 폭발적인 치명타를 가하라"></a></li>
+          <li><a class="gallery-item" href="assets/img/promo-03-1504.webp"><img src="assets/img/promo-03-720.webp" width="720" height="355" loading="lazy" alt="심연의 지배자! 암흑 성채 파이널 보스전. 대륙의 혼돈을 몰고 온 심연의 군주 카자르에 맞서라!"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. 게임 정보 -->
+    <section id="info" class="section" aria-labelledby="info-title">
+      <div class="container">
+        <div class="info-card reveal">
+          <p class="badge">게임 정보</p>
+          <h2 id="info-title">체이서 테일즈 3D</h2>
+          <dl class="info-list">
+            <div><dt>장르</dt><dd>턴제 액션 로그라이크 RPG</dd></div>
+            <div><dt>플랫폼</dt><dd>Android 8.0 이상 · 토스 앱(앱인토스)</dd></div>
+            <div><dt>네트워크</dt><dd>인터넷 연결 필요</dd></div>
+            <div><dt>개발</dt><dd>CreativityClub</dd></div>
+            <!-- 값이 확정되면 hidden을 지우고 값을 넣는다: 출시일, 가격·인앱 결제 여부 -->
+            <div hidden><dt>출시일</dt><dd></dd></div>
+            <div hidden><dt>가격</dt><dd></dd></div>
+            <!-- 스토어 행은 js/main.js의 STORE_LINKS에 URL이 있을 때만 자동으로 나타난다 -->
+            <div hidden data-store-row><dt>스토어</dt><dd data-store-list></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 최종 CTA -->
+    <section id="download" class="final-cta" aria-labelledby="download-title">
+      <div class="container final-inner reveal">
+        <img src="assets/img/logo-icon-192.webp" width="96" height="96" loading="lazy" alt="체이서 테일즈 3D 앱 아이콘">
+        <h2 id="download-title">다음 턴은 당신 차례</h2>
+        <p class="lead">0.2초의 가드, 진화하는 검, 쓰러져도 남는 성장. 엘레스와 함께 심연의 끝까지 가 보세요.</p>
+        <div class="final-actions" data-store-buttons hidden></div>
+        <div data-store-fallback>
+          <p class="store-note">다운로드 링크는 준비되는 대로 이 페이지에 안내합니다.</p>
+          <p class="contact">문의: <a href="mailto:jyha6202h@gmail.com">jyha6202h@gmail.com</a></p>
+        </div>
+        <!-- 커뮤니티(디스코드·SNS) 링크는 생기기 전까지 영역을 두지 않는다 -->
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. 푸터 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>체이서 테일즈 3D</strong> · 개발 <strong>CreativityClub</strong></p>
+      <p>
+        <span>문의 <a href="mailto:jyha6202h@gmail.com">jyha6202h@gmail.com</a></span>
+        <span aria-hidden="true">·</span>
+        <a href="privacy-policy.html">개인정보처리방침</a>
+        <span aria-hidden="true">·</span>
+        <a href="#top">맨 위로</a>
+      </p>
+      <p class="copyright">© CreativityClub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 라이트박스 (JS가 있을 때만 사용) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="스크린샷 크게 보기" hidden>
+    <button class="lb-btn lb-close" type="button" aria-label="닫기">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" type="button" aria-label="이전 이미지">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <figure class="lb-figure">
+      <img class="lb-img" src="assets/img/promo-08-720.webp" width="1504" height="741" alt="">
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="다음 이미지">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+    <p class="lb-count" aria-live="polite"></p>
+  </div>
+</body>
+</html>

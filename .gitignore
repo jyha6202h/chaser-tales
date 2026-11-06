@@ -1,0 +1,9 @@
+# 하네스 중간 산출물 (로컬 작업 기록, 배포 대상 아님)
+_workspace/
+_workspace_*/
+# 재생성 시 백업된 이전 사이트
+site_*/
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
